@@ -1,5 +1,15 @@
 #include "TamGiac.h"
 #include "DayTamGiac.h"
+void Bai1()
+{
+	Diem d1, d2;
+	cout << "Nhap Diem 1: " << endl; cin >> d1;
+	cout << "Nhap Diem 2: " << endl; cin >> d2;
+	cout << d1;
+	cout << d2;
+	cout << "Khoang cach 2 diem: "; cout << d1.DoDai(d2);
+	cout << endl;
+}
 void Bai2()
 {
 	double a = 0, b = 0, c = 0;
@@ -41,6 +51,7 @@ void main()
 	int LuaChon = 0;
 	do
 	{
+		cout << "1. Bai 1" << endl;
 		cout << "2. Bai 2" << endl;
 		cout << "3. Bai 3" << endl;
 		cout << "4. Thoat" << endl;
@@ -48,6 +59,11 @@ void main()
 		cin >> LuaChon;
 		switch (LuaChon)
 		{
+		case 1:
+			Bai1();
+			system("pause");
+			system("cls");
+			break;
 		case 2:
 			Bai2();
 			system("pause");

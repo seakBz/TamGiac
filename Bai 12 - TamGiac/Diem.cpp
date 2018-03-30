@@ -2,7 +2,7 @@
 
 ostream& operator<<(ostream &os, Diem d)
 {
-	os << d.x << ";" << d.y << endl;
+	os << "(" << d.x << ";" << d.y << ")" << endl;
 	return os;
 }
 istream& operator >> (istream &is, Diem &d)
